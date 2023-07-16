@@ -1,5 +1,5 @@
 {
-    "playerScore": 2,
-    "higherScore": 20,
-    "hasPlayed": true
+    "playerScore": 0,
+    "higherScore": 0,
+    "hasPlayed": false
 }
