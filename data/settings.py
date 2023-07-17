@@ -4,7 +4,7 @@
 try:
     import pygame
 
-    from json import loads, dumps
+    from json import loads, dumps, load, dump
     from webbrowser import open as op
     from random import randint
     from sys import exit
@@ -31,8 +31,10 @@ FRAMES_PER_SECOND = data["FRAMES_PER_SECOND"]
 
 
 # ========================= enemy =========================
-ENEMY_SPEED = data["ENEMY_SPEED"] / FRAMES_PER_SECOND
 SPAWN_RATE = data["SPAWN_RATE"]
+EASY_SPEED = data["EASY_SPEED"]
+MEDIUM_SPEED = data["MEDIUM_SPEED"]
+HARD_SPEED = data["HARD_SPEED"]
 FLY_RARITY = data["FLY_RARITY"]
 SNAIL_ANIMATION_SPEED = data["SNAIL_ANIMATION_SPEED"]
 FLY_ANIMATION_SPEED = data["FLY_ANIMATION_SPEED"]

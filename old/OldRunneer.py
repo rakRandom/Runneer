@@ -2,7 +2,7 @@
 Treinamento do módulo pygame, com a criação de um jogo do tipo endless runner
 chamado "Runneer", usando como referência e auxílio o vídeo "The ultimate introduction to Pygame"¹
 
-- Versão sem classes
+- Versão desatualizada
 
 Feito por: Fellipe Leonardo Peixoto Cunha²
 
@@ -56,13 +56,10 @@ Shows that the area is totally complete and only change it to expand with cautio
 ----------------------------------------- Sections Markers -----------------------------------------"""
 
 
-# Falta o áudio e atualizar para igualar ao WF
-
-
 # ==================== Import ====================
 
 try:
-    from settings import *
+    from data.settings import *
 except: raise ImportError("Error 1: Cannot import settings module")
 
 
@@ -96,7 +93,7 @@ class Main:
     def drawEnemy(self, enemyList, snail_Surface, fly_Surface):
         if enemyList:
             for enemy in enemyList:
-                enemy.x -= ENEMY_SPEED
+                enemy.x -= enemySpeed / FRAMES_PER_SECOND
 
                 if enemy.bottom == ground_y_pos:
                     screen.blit(snail_Surface, enemy)
@@ -113,7 +110,9 @@ class Main:
             save.write(dumps({
             "playerScore":playerScore,
             "higherScore":higherScore,
-            "hasPlayed":hasPlayed
+            "hasPlayed":hasPlayed,
+            "difficulty": 1,
+            "enemySpeed": 350
         }, indent=4))
             
 
@@ -122,7 +121,7 @@ class Main:
         pygame.init()
 
         # ========== General Globals ==========
-        global screen, ground_y_pos
+        global screen, ground_y_pos, enemySpeed
 
         # ========== Player Globals ==========
         global player_Surface, playerIndex, walkState
@@ -156,6 +155,7 @@ class Main:
         playerScore = gameData["playerScore"]
         higherScore = gameData["higherScore"]
         hasPlayed = gameData["hasPlayed"]
+        enemySpeed = gameData["enemySpeed"]
         playerGravity = 0
         gameRunning = False
         inLinks = False
