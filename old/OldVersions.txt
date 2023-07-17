@@ -1,0 +1,7 @@
+===========================================================
+
+The game version in this folder is deprecated
+If you want to use, move it to the Runner Project folder
+Not Recommended
+
+===========================================================
