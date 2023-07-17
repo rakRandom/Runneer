@@ -8,7 +8,7 @@ Feito por: Fellipe Leonardo Peixoto Cunha²
 Com auxílio de: Clear Code³⁴
 
 Data de inicio: 14/07/2023
-Data de término: XX/XX/XXXX
+Data de término: 16/07/2023
 
 Referências:
 
