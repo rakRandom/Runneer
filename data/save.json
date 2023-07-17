@@ -1,7 +1,7 @@
 {
-    "playerScore": 9,
-    "higherScore": 8,
-    "hasPlayed": true,
+    "playerScore": 0,
+    "higherScore": 0,
+    "hasPlayed": false,
     "difficulty": 1,
     "enemySpeed": 350,
     "oldJump": false
