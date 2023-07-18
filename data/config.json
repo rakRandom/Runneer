@@ -1,0 +1,18 @@
+{
+    "GAME_NAME": "Runneer",
+    "GAME_ICON": "graphics/snail.png",
+    "ANIMATION_SPEED": 10,
+    "BACKGROUND_SPEED": 4,
+    "SCREEN_WIDTH": 800,
+    "SCREEN_HEIGHT": 400,
+    "FRAMES_PER_SECOND": 240,
+    "SPAWN_RATE": 1500,
+    "EASY_SPEED": 250,
+    "MEDIUM_SPEED": 350,
+    "HARD_SPEED": 450,
+    "FLY_RARITY": 3,
+    "SNAIL_ANIMATION_SPEED": 10,
+    "FLY_ANIMATION_SPEED": 15,
+    "JUMP_FORCE": -500,
+    "GRAVITY_ACCELERATION": 750
+}

@@ -1,0 +1,8 @@
+{
+    "playerScore": 0,
+    "higherScore": 5,
+    "hasPlayed": true,
+    "difficulty": 1,
+    "enemySpeed": 350,
+    "oldJump": false
+}
